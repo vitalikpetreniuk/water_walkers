@@ -1,0 +1,39 @@
+.sidebar-desktop {
+  position: fixed;
+  top: 113px;
+  left: 50%;
+  z-index: 6;
+  @include media-min(992) {
+    transform: translate(calc(-50% + 482px), 0);
+  }
+  @include media-min(1200) {
+    transform: translate(calc(-50% + 575px), 0);
+  }
+  @include media-min(1400) {
+    transform: translate(calc(-50% + 683px), 0);
+  }
+  .language {
+    margin-bottom: 28px;
+  }
+  .socials {
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 28px;
+      }
+      i {
+        &::before {
+          transition: $transition-main;
+        }
+      }
+      &:hover {
+        a {
+          i {
+            &::before {
+              background: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}

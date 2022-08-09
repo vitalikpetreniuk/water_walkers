@@ -1,0 +1,13 @@
+.title {
+  h2 {
+    color: $yellow;
+    margin-bottom: 15px;
+  }
+  span {
+    color: $yellow;
+    margin-top: 15px;
+    @include media-min(992) {
+      margin-top: 20px;
+    }
+  }
+}

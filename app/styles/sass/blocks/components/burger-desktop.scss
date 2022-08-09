@@ -1,0 +1,16 @@
+.burger-desktop {
+  max-width: 27px;
+  position: fixed;
+  top: 113px;
+  left: 50%;
+  z-index: 1;
+  @include media-min(992) {
+    transform: translate(calc(-50% - 482px), 0);
+  }
+  @include media-min(1200) {
+    transform: translate(calc(-50% - 575px), 0);
+  }
+  @include media-min(1400) {
+    transform: translate(calc(-50% - 683px), 0);
+  }
+}

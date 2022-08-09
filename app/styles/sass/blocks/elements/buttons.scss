@@ -1,0 +1,54 @@
+.btn-main {
+  font-family: Oswald, sans-serif;
+  border: 1px solid #FFFFFF;
+  width: fit-content;
+  min-height: 66px;
+  padding: 10px 15.5px;
+  transition: $transition-main;
+  i {
+    &::before {
+      transition: $transition-main;
+    }
+  }
+  &:hover {
+    color: $yellow;
+    border-color: $yellow;
+    i {
+      &::before {
+        background: $yellow;
+      }
+    }
+  }
+}
+
+.btn-decor {
+  position: relative;
+  display: inline-block;
+  font-family: Oswald, sans-serif;
+  background: $white;
+  color: $black;
+  transition: $transition-main;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 16px solid $white;
+    border-left: 16px solid transparent;
+  }
+  &:hover {
+    color: $grey;
+    i {
+      &::before {
+        background: $grey;
+      }
+    }
+  }
+  i {
+    &::before {
+      transition: $transition-main;
+    }
+  }
+}

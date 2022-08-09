@@ -1,0 +1,42 @@
+.card-is {
+  position: relative;
+  background: $white;
+  @include media-min(992) {
+    max-width: 430px;
+    width: 100%;
+  }
+  @include media-min(1400) {
+    max-width: 651px;
+    width: 100%;
+  }
+  &__header {
+    padding: 13px 25px;
+    border-bottom: 1px solid $black;
+    @include media-min(992) {
+      padding: 13px 40px;
+    }
+    b {
+      margin-left: 30px;
+      font-family: Oswald, sans-serif;
+      color: $black;
+    }
+  }
+  &__body {
+    padding: 24px 15px;
+    color: $black;
+    @include media-min(992) {
+      padding: 24px 40px;
+    }
+    p {
+      margin: 0;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__decor {
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+  }
+}

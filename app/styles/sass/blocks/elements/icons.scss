@@ -1,0 +1,158 @@
+.icon {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: $white;
+  transition: $transition-main;
+  i::before {
+    background: $black;
+  }
+  &-arrow {
+    width: 43px;
+    height: 16px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 43px;
+      height: 16px;
+      background: url("../images/dist/icons/icon-arrow.svg") no-repeat;
+      mask: url("../images/dist/icons/icon-arrow.svg") no-repeat;
+      background: $white;
+    }
+  }
+  &-arrow2 {
+    width: 23px;
+    height: 15px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 23px;
+      height: 15px;
+      background: url("../images/dist/icons/icon-arrow2.svg") no-repeat;
+      mask: url("../images/dist/icons/icon-arrow2.svg") no-repeat;
+      background: $black;
+    }
+  }
+  &-arrow-right {
+    width: 42px;
+    height: 26px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 42px;
+      height: 26px;
+      background: url("../images/dist/icons/icon-arrow-right.svg") no-repeat;
+      mask: url("../images/dist/icons/icon-arrow-right.svg") no-repeat;
+      background: $yellow;
+    }
+  }
+  &-arrow-down {
+    width: 15px;
+    height: 20px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 20px;
+      background: url("../images/dist/icons/icon-arrow-down.svg") no-repeat;
+      mask: url("../images/dist/icons/icon-arrow-down.svg") no-repeat;
+      background: $black;
+    }
+  }
+  &-instagram {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url("../images/dist/icons/socials/instagram.png") no-repeat;
+      mask: url("../images/dist/icons/socials/instagram.png") no-repeat;
+      background: $white;
+    }
+  }
+  &-tik-tok {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url("../images/dist/icons/socials/tik-tok.svg") no-repeat;
+      mask: url("../images/dist/icons/socials/tik-tok.svg") no-repeat;
+      background: $white;
+    }
+  }
+  &-youtube {
+    width: 29.5px;
+    height: 29.5px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 29.5px;
+      height: 29.5px;
+      background: url("../images/dist/icons/socials/youtube.svg") no-repeat;
+      mask: url("../images/dist/icons/socials/youtube.svg") no-repeat;
+      background: $white;
+    }
+  }
+  &-telegram {
+    width: 28.5px;
+    height: 32.5px;
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 28.5px;
+      height: 32.5px;
+      background: url("../images/dist/icons/socials/telegram.svg") no-repeat;
+      mask: url("../images/dist/icons/socials/telegram.svg") no-repeat;
+      background: $white;
+    }
+  }
+  &-wavy {
+    display: inline-flex;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 7px;
+      background: url("../images/dist/icons/icon-wavy.svg") no-repeat;
+      mask: url("../images/dist/icons/icon-wavy.svg") no-repeat;
+      background: $yellow;
+    }
+  }
+  &-copy {
+    display: inline-block;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: url("../images/dist/icons/icon-copy.svg") no-repeat 50%;
+      mask: url("../images/dist/icons/icon-copy.svg") no-repeat 50%;
+      background: $black;
+    }
+  }
+  &-scroll {
+    display: inline-block;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 26px;
+      height: 116px;
+      background: url("../images/dist/icons/icon-scroll.svg") no-repeat 50%;
+      mask: url("../images/dist/icons/icon-scroll.svg") no-repeat 50%;
+      background: $white;
+    }
+  }
+}

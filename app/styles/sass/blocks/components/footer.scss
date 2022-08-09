@@ -1,0 +1,32 @@
+.footer {
+  padding: 20px 0;
+  min-height: 80px;
+  border-top: 1px solid $white;
+  @include media-min(992) {
+    min-height: 123px;
+  }
+  .socials {
+    li {
+      margin: 0 14px;
+      @include media-min(991) {
+        margin: 0 16px;
+      }
+      a {
+        i {
+          &::before {
+            transition: $transition-main ;
+          }
+        }
+      }
+      &:hover {
+        a {
+          i {
+            &::before {
+              background: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}

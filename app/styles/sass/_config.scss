@@ -1,0 +1,108 @@
+// USER VARIABLES SECTION
+
+$accent: #f7ef00; // Accent Color
+$fontsize: 14px; // Body Font Size
+$textcolor: #FFFFFF; // Text Color
+$lineheight: 1.65; // Document Line Height
+$userfont: Montserrat, sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import "mixins";
+@import "variables";
+
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+	}
+}
+
+@include font('Gilroy', normal, 300, '../fonts/gilroy-light.woff2');
+@include font('Gilroy', normal, 400, '../fonts/gilroy-regular.woff2');
+@include font('Gilroy', normal, 800, '../fonts/gilroy-extrabold.woff2');
+
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+//@import 'node_modules/bootstrap/scss/_utilities.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+// GENERAL CSS SETTINGS
+
+::placeholder {
+	color: rgba(255, 255, 255, 0.45);
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	scrollbar-width: none;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6 {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+b {
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: $textcolor;
+	&:hover {
+		color: $textcolor;
+	}
+}
+button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+body {
+	font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+	min-width: 320px;
+	position: relative;
+	background: #0B0A0A;
+	font-weight: 400;
+}
+
+._over-hidden {
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1347px;
+	}
+}

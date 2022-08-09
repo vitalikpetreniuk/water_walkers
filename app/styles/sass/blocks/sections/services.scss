@@ -1,0 +1,107 @@
+.services {
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0 70px;
+  background: url("../images/dist/content/theme.jpg");
+  @include media-min(992) {
+    padding: 70px 0 50px;
+  }
+  .container {
+    position: relative;
+  }
+  &-img {
+    position: absolute;
+    &.right {
+      top: 0;
+      right: 0;
+    }
+    &.left {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &-title {
+    margin-bottom: 65px;
+  }
+  &-prev {
+    margin-bottom: 40px;
+    @include media-min(992) {
+      width: 33%;
+    }
+    .prev-title {
+      margin-bottom: 10px;
+    }
+    p {
+      @include media-min(992) {
+        margin-bottom: 10px;
+      }
+    }
+    * {
+      @include media-min(992) {
+        text-align: start;
+      }
+    }
+    .services-support {
+      position: relative;
+      @include media-min(992) {
+        margin-top: auto;
+      }
+    }
+  }
+  &-list {
+    margin-bottom: 60px;
+    @include media-min(992) {
+      width: 67.5%;
+      margin: 0 -35px;
+      height: fit-content;
+    }
+    li {
+      max-width: 305px;
+      margin: 0 auto 30px auto;
+      @include media-min(420) {
+        max-width: none;
+      }
+      @include media-min(992) {
+        width: calc(50% - 70px);
+        margin: 0 35px 40px;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      i {
+        margin-top: 6px;
+      }
+      & > div {
+        margin-left: 15px;
+        span {
+          padding-bottom: 4px;
+          display: inline-block;
+        }
+      }
+    }
+    &__title {
+      color: $yellow;
+    }
+  }
+  &-support {
+    position: relative;
+    &__title {
+      color: $yellow;
+    }
+    &__number {
+      cursor: pointer;
+      span {
+        &:last-of-type {
+          background: $white;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          margin-left: 5px;
+        }
+        &.copied {
+          background: $yellow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 10, 10, 0.69);
+  z-index: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: $transition-main;
+  &.show {
+    @include media-min(992) {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

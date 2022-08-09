@@ -1,0 +1,8 @@
+.main-events {
+  .join-us {
+    padding: 60px 0 82px;
+    @include media-min(992) {
+      padding: 100px 0;
+    }
+  }
+}

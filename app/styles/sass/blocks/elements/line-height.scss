@@ -1,0 +1,27 @@
+.lh-23 {
+  line-height: 23px;
+}
+.lh-36 {
+  line-height: 36px;
+}
+.lh-40 {
+  line-height: 40px;
+}
+.lh-70 {
+  line-height: 70px;
+}
+
+@include media-min(576) {
+  .lh-sm-48 {
+    line-height: 48px;
+  }
+}
+
+@include media-min(992) {
+  .lh-lg-48 {
+    line-height: 48px;
+  }
+  .lh-lg-150 {
+    line-height: 150px;
+  }
+}

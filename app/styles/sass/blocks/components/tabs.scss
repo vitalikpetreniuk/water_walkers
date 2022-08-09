@@ -1,0 +1,125 @@
+.tabs {
+  margin-top: 30px;
+  &-wrapper {}
+  &-list {
+    border-bottom: 1px solid $white;
+    li {
+      cursor: pointer;
+      padding: 6px 10px;
+      color: $grey-secondary;
+      width: 33.333%;
+      &.active {
+        font-weight: 800;
+        color: $yellow;
+        border: 1px solid $white;
+        position: relative;
+        &::before {
+          content: '';
+          background: $black;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 2px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  &-content {
+    padding-top: 40px;
+    display: none;
+    &.active {
+      display: block;
+    }
+    .title {
+      margin-bottom: 30px;
+    }
+    .command {
+      li {
+        margin-bottom: 50px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .command-slider {
+      margin-bottom: 100px;
+      li {
+        img {
+          //width: 100%;
+          margin: 0 auto;
+          height: 300px;
+        }
+      }
+    }
+    .services {
+      padding: 0;
+      background: none;
+      i {
+        margin: 0;
+      }
+      &-list {
+        margin-bottom: 0;
+        @include media-min(992) {
+          width: initial;
+        }
+        & > li {
+          margin-bottom: 45px;
+          max-width: none;
+          @include media-min(992) {
+            width: initial;
+          }
+          div {
+            ul {
+              & > li {
+                margin: 0 auto;
+                @include media-min(992) {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+        &__title {
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .location {
+      padding: 50px 0 60px;
+      background: url("../images/dist/content/theme.jpg");
+      @include media-min(992) {
+        padding: 50px 0;
+      }
+      &-map {
+        margin: 25px 0 30px 0;
+        //margin-top: 25px;
+        //margin-bottom: 30px;
+        text-align: center;
+        @include media-min(992) {
+          margin: 0 45px 0 17px;
+        }
+        img {
+          width: 100%;
+          max-width: 491px;
+        }
+      }
+      &-marks {
+        li {
+          &:not(:last-of-type) {
+            margin-bottom: 28px;
+          }
+          div {
+            margin-right: 17px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: $yellow;
+          }
+        }
+      }
+    }
+  }
+}

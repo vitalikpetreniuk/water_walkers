@@ -1,0 +1,13 @@
+.language {
+  width: fit-content;
+  li {
+    padding: 0 2px;
+    a {}
+    &.active {
+      background: $yellow;
+      a {
+        color: $black;
+      }
+    }
+  }
+}

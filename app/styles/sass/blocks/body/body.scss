@@ -1,0 +1,29 @@
+.body-events {
+  .main-banner__content {
+    padding-top: 106px;
+    @include media-min(1400) {
+      padding-top: 220px;
+    }
+    .container {
+      & > * {
+        @include media-min(992) {
+          width: calc(50% - 40px);
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+.home-groups {
+  .main-banner__content {
+    padding-top: 35vh;
+    @include media-min(992) {
+      padding-top: 25vh;
+    }
+  }
+  .main-banner__content>div h1 {
+    max-width: none;
+    margin: 0;
+  }
+}

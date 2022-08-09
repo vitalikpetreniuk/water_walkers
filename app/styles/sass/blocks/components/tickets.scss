@@ -1,0 +1,93 @@
+.tickets {
+  margin: 10px 0 80px;
+  @include media-min(992) {
+    margin: 50px -7.5px 75px;
+  }
+  .ticket {
+    margin-bottom: 15px;
+    padding: 10px 15px 25px;
+    border: 1px solid $white;
+    @include media-min(992) {
+      width: calc(33.3333% - 15px);
+      margin: 0 7.5px 15px;
+    }
+    &-header {
+      & > div {
+        b {}
+        span {
+          font-family: Lato, sans-serif;
+          font-style: italic;
+        }
+      }
+      img {
+        max-width: 58px;
+      }
+    }
+    &-image {
+      margin: 90px 0 30px;
+      img {
+        max-width: 392px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    &-footer {
+      &__meaning {
+        color: $yellow;
+        max-width: 230px;
+        margin: 0 auto;
+      }
+      &__author {
+        margin: 20px 0 8px;
+      }
+      &__series {}
+    }
+  }
+  .ticket-alt {
+    margin-top: 45px;
+    &.column-1 {
+      @include media-min(992) {
+        width: calc(33.3333% - 15px);
+        margin: 0 7.5px;
+      }
+    }
+    &.column-2 {
+      @include media-min(992) {
+        width: calc(66.6666% - 15px);
+        margin: 0 7.5px
+      }
+    }
+    &.column-3 {
+      @include media-min(992) {
+        width: calc(100% - 15px);
+        margin: 0 7.5px
+      }
+    }
+    &__wrapper {
+      @include media-min(992) {
+        max-width: 651px;
+      }
+    }
+    &__header {
+      margin-bottom: 35px;
+      b {
+        color: $yellow;
+      }
+    }
+    &__text {
+      margin-bottom: 20px;
+      p {}
+    }
+    &__btn {
+      padding: 9.5px 34px 9.5px 17px;
+      width: fit-content;
+      margin-left: auto;
+      i {
+        margin-right: 9px;
+        &::before {
+          background: $black;
+        }
+      }
+    }
+  }
+}

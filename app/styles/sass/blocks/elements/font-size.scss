@@ -1,0 +1,51 @@
+.fz-8 {
+  font-size: 8px;
+}
+.fz-12 {
+  font-size: 12px;
+}
+.fz-16 {
+  font-size: 16px;
+}
+.fz-20 {
+  font-size: 20px;
+}
+.fz-24 {
+  font-size: 24px;
+}
+.fz-50 {
+  font-size: 50px;
+}
+.fz-70 {
+  font-size: 70px;
+}
+
+@include media-min(576) {
+  .fz-sm-32 {
+    font-size: 32px;
+  }
+  .fz-sm-16 {
+    font-size: 16px;
+  }
+}
+
+@include media-min(992) {
+  .fz-lg-16 {
+    font-size: 16px;
+  }
+  .fz-lg-24 {
+    font-size: 24px;
+  }
+  .fz-lg-32 {
+    font-size: 32px;
+  }
+  .fz-lg-100 {
+    font-size: 100px;
+  }
+}
+
+@include media-min(1200) {
+  .fz-xl-130 {
+    font-size: 130px;
+  }
+}

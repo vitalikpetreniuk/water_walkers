@@ -1,0 +1,106 @@
+.menu-mob {
+  background: $black;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  transition: $transition-main;
+  @include media-min(992) {
+    width: 33vw;
+    right: initial;
+    left: -100%;
+  }
+  &.opened {
+    @include media-min(992) {
+      left: 0;
+    }
+  }
+  &.show {
+    right: 0;
+  }
+  .header-mob {
+    position: absolute;
+  }
+  nav {
+    width: fit-content;
+    margin-top: 140px;
+    & > ul {
+      &:first-of-type {
+        li {
+          &:hover {
+            a {
+              @include media-min(992) {
+                font-weight: 600;
+              }
+            }
+          }
+          a {
+            transition: $transition-main;
+          }
+          &.alt {
+            margin: 25px 0;
+            position: relative;
+            span {
+              font-family: Oswald, sans-serif;
+              position: absolute;
+              top: 0;
+              background: $yellow;
+              color: $black;
+              padding: 0 3px;
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        font-family: Oswald, sans-serif;
+        li {
+          &:hover {
+            a {
+              @include media-min(992) {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      li {
+        &:hover {
+          a {
+            color: $yellow;
+            font-weight: 700;
+            @include media-min(992) {
+              font-weight: 600;
+              color: $white;
+              text-decoration: underline;
+            }
+          }
+          &.current {
+            a {
+              font-weight: 700;
+              text-decoration: none;
+            }
+          }
+        }
+        &.current {
+          a {
+            color: $yellow;
+            font-weight: 700;
+          }
+        }
+      }
+      @include media-min(992) {
+        text-align: start;
+      }
+    }
+  }
+  .socials {
+    margin: 40px 0 40px;
+    li {
+      margin: 0 15px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.header-mob {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 7;
+  &__circle {
+    margin: 0 auto;
+    transform: translate(13.5px, 0);
+    @include media-min(992) {
+      transform: none;
+    }
+    img {
+      @include media-max(575) {
+        max-width: 51px;
+      }
+    }
+    &:hover {
+      img {
+        animation: rotate 2s linear infinite;
+      }
+    }
+  }
+  .burger {
+    img {
+      max-width: 27px;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}

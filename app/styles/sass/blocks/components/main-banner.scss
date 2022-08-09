@@ -1,0 +1,68 @@
+.main-banner {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 35px;
+  * {
+    position: relative;
+  }
+  &__video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  &__content {
+    padding-top: 135px;
+    @include media-min(992) {
+      padding-top: 270px;
+    }
+    & > div {
+      p, h1 {
+        margin: 0 auto 15px auto;
+        max-width: 300px;
+        @include media-min(376) {
+          max-width: 634px;
+        }
+      }
+    }
+  }
+  .btn-main {
+    margin: 40px auto 0;
+    @include media-min(992) {
+      margin: 140px auto 0;
+    }
+    span {
+      margin-right: 9px;
+    }
+  }
+  &__scroll {
+    display: none;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: down-up 2s linear infinite;
+    @include media-max-h(750) {
+      animation: none;
+      display: none !important;
+    }
+    @include media-min(992) {
+      display: block;
+    }
+  }
+}
+
+@keyframes down-up {
+  0% {
+    bottom: 5vh;
+  }
+  50% {
+    bottom: 3vh;
+  }
+  100% {
+    bottom: 5vh;
+  }
+}

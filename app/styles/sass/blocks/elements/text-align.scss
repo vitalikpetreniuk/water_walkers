@@ -1,0 +1,12 @@
+.text-center {
+  text-align: center;
+}
+.text-start {
+  text-align: left;
+}
+
+@include media-min(992) {
+  .text-lg-start {
+    text-align: start;
+  }
+}
