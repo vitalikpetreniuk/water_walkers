@@ -27,3 +27,23 @@
     margin: 0;
   }
 }
+
+.slang {
+  .main-banner__content {
+    padding-top: 170px;
+    @include media-min(992) {
+      padding-top: 235px;
+    }
+    h1 {
+      @include media-min(992) {
+        margin-left: 0;
+      }
+    }
+  }
+  .main-banner__search {
+    margin: 0 15px;
+    @include media-min(992) {
+      max-width: 430px;
+    }
+  }
+}

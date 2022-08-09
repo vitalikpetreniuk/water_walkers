@@ -1,0 +1,13 @@
+.cards-list {
+  margin: 0 -7.5px;
+  .card-is {
+    max-width: none;
+    @include media-min(992) {
+      width: calc(50% - 15px);
+      margin: 0 7.5px 15px;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+}

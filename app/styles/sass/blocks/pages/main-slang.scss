@@ -1,0 +1,19 @@
+.main-slang {
+  padding: 40px 0 70px;
+  @include media-min(992) {
+    padding: 70px 0 80px;
+  }
+  .title {
+    margin-bottom: 30px;
+    @include media-min(992) {
+      margin-bottom: 74px;
+    }
+  }
+  .card-is {
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
